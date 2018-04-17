@@ -15,7 +15,7 @@ A Rust crate for bit-level IO.
     let mut bits_written = writer.write_bit(0)?;
     bits_written += writer.write_bits(7, 0b100_0001)?;
     bits_written += writer.write_bits(2, 0b01)?;
-    bits_written += writer.flush()?; // returns usize indicating the number of bits of padding.
+    bits_written += writer.flush()?; // returns u64 indicating the number of bits of padding.
 
     assert_eq!(buf, [0b0100_0001, 0b0100_0000]);
 
