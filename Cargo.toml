@@ -1,0 +1,9 @@
+[package]
+name = "bitrw"
+version = "0.1.0"
+authors = ["Thomas Hurst <tom@hur.st>"]
+
+[dependencies]
+
+[dev-dependencies]
+rand = "0.4.0"
