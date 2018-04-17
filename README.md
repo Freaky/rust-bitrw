@@ -20,7 +20,7 @@ A Rust crate for bit-level IO.
     assert_eq!(buf, [0b0100_0001, 0b0100_0000]);
 
     // Or io::Read, and optionally io::Seek for seeking by bit position.
-    let mut reader = BitReader::new(buf);
+    let mut reader = BitReader::new(Cursor::new(writer.into_inner()));
 
     let bit = reader.read_bit()?; // u8, 0 or 1
     let rest_of_byte = reader.read_bits(7)?; // u64 of remainder.
