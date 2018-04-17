@@ -26,9 +26,9 @@ A Rust crate for bit-level IO.
     let rest_of_byte = reader.read_bits(7)?; // u64 of remainder.
     let bits = reader.read_bits(2)?;
 
-    assert_eq!(bit, 0);
-    assert_eq!(rest_of_byte, 0b100_0001);
-    assert_eq!(bits, 0b01);
+    assert_eq!(bit, 0_u8);
+    assert_eq!(rest_of_byte, 0b100_0001_u64);
+    assert_eq!(bits, 0b01_u64);
 
 
 Currently the interface can be considered unstable.
