@@ -2,9 +2,7 @@ use std::io;
 use std::io::SeekFrom;
 use std::io::{Error, ErrorKind};
 
-const MASKS: [u64; 9] = [
-    0, 0b1, 0b11, 0b111, 0b1111, 0b11111, 0b111111, 0b1111111, 0b11111111
-];
+const MASKS: [u64; 8] = [0, 0b1, 0b11, 0b111, 0b1111, 0b11111, 0b111111, 0b1111111];
 
 /// `The BitReader` struct adds bit-level reading to any io::Reader.
 ///
