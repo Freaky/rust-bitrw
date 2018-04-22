@@ -10,7 +10,7 @@ A Rust crate for bit-level IO.
     // Something implementing io::Write
   	let buf: Vec<u8> = Vec::new();
 
-    let mut writer = BitWriter::new(BufWriter::new(buf);
+    let mut writer = BitWriter::new(BufWriter::new(buf));
 
     let mut bits_written = writer.write_bit(0)?;
     bits_written += writer.write_bits(7, 0b100_0001)?;
