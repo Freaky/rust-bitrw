@@ -1,4 +1,4 @@
-### bitrw
+# bitrw [![Build Status](https://travis-ci.org/Freaky/rust-bitrw.svg?branch=master)](https://travis-ci.org/Freaky/rust-bitrw)
 
 A Rust crate for bit-level IO.
 
